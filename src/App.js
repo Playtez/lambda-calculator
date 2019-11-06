@@ -23,26 +23,24 @@ function App() {
   return (
     <div className="container">
       <Logo />
-      <button
-        onClick={() => {
-          setDisplayState(displayState + 10);
-        }}></button>
-      <div className="App">
-        <Display displayState={displayState} />
-        <div className="Specials">
-          <Specials />
-        </div>
-        <div className="div-button">
-          <div className="number-buttons">
+
+      <Display displayState={displayState} />
+
+      <div className="keys">
+        <div className="specials-number">
+          <div className="specials">
+            <Specials />
+          </div>
+          <div className="numbers">
             <Numbers setDisplayState={setDisplayState} />
           </div>
-          <div className="operators">
-            <Operators />
-          </div>
         </div>
-
-        {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+        <div className="operators">
+          <Operators />
+        </div>
       </div>
+
+      {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
     </div>
   );
 }
