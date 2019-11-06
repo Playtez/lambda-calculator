@@ -6,6 +6,7 @@
     border: 2px solid grey;
     padding-bottom: 25px;
 }
+
 .display {
     margin-top: 25px;
     height: 100px;
@@ -19,4 +20,24 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
-  }
+}
+
+.div-button {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    background-color: grey;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+}
+
+.props {
+    background-color: green;
+}
+
+
+/* .props */
