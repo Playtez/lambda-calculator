@@ -1,15 +1,20 @@
 .container {
-    background-color: #c00025;
+    background-color: rgb(168, 28, 54);
     width: 100%;
-    max-width: 550px;
+    max-width: 500px;
     border-radius: 15px;
     border: 2px solid grey;
     padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 .display {
     margin-top: 25px;
     height: 100px;
-    width: 450px;
+    width: 400px;
     border-radius: 50px;
     color: white;
     background-color: #322c2d;
@@ -19,4 +24,40 @@
     align-items: flex-end;
     padding-right: 8%;
     font-size: 5.0rem;
-  }
+}
+
+.keys {
+    max-width: 500px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 6.5px;
+    width: 82px;
+    height: 80px;
+    border-radius: 40px;
+    font-size: 1.6rem;
+    box-shadow: 2px 2px #322c2d;
+    color: white;
+}
+
+.numbers button {
+    background-color: rgb(23, 66, 122)
+}
+
+.numbers button:nth-of-type(10) {
+    background-color: rgb(23, 66, 122);
+    width: 177px;
+}
+
+.specials button {
+    background-color: rgb(33, 93, 157)
+}
+
+.operators button {
+    background-color: rgb(35, 114, 147)
+}
